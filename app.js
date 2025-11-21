@@ -25,10 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             .then(data => {
                 resultDiv.innerHTML = data;
+                document.getElementById("resultHeading").style.display = "block";
             })
             .catch(error => {
                 console.error("Error:", error);
                 resultDiv.innerHTML = "<p>There was an error processing your request.</p>";
             });
     });
+
 });
